@@ -3,20 +3,30 @@
 <head>
     <title>Combinators</title>
     <style>
-        
+        span div {
+            color: orange;
+        }
+
+        span > div {
+            font-size: large;
+        }
+
+        span + div {
+            color: red;
+        }
+
+        span ~ div {
+            background-color: yellow;
+        }
     </style>
 </head>
 
 <body>
     <span>
-        <div>First</div>
-        <article>
-            <div>Second</div>
-        </article>
-        <div>Third</div>
+        <div>Descendant and child</div>
     </span>
-    <div>Fourth</div>
-    <div>Fifth</div>
+    <div>Adjacent sibling</div>
+    <div>General sibling</div>
 </body>
 
 </html>
